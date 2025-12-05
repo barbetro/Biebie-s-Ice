@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Biebie’s Ice — Homemade Ice Cream</title>
+  <meta name="description" content="Biebie’s Ice — Homemade, creamy, & made by a young pioneer. Order via WhatsApp!" />
+
+  <style>
+    :root{
+      --bg: #FBFDFF;
+      --primary: #67C8D6;
+      --accent: #FF7FB3;
+      --dark: #183A38;
+      --muted: #6B6B6B;
+      --card: #FFFFFF;
+      --radius: 12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;background:linear-gradient(180deg,#FFF 0%, #F5FBFF 100%);
+      color:var(--dark);line-height:1.45;
+    }
+    .container{max-width:1000px;margin:0 auto;padding:20px;}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--dark)}
+    .logo svg{width:48px;height:48px}
+    .brand{font-weight:700;font-size:20px}
+    nav{display:flex;gap:12px;align-items:center}
+    nav a{color:var(--dark);text-decoration:none;font-weight:600;font-size:14px}
+    .cta{background:var(--primary);color:#fff;padding:8px 12px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:center;margin:28px 0}
+    .hero .title{font-size:28px;font-weight:800;margin:0 0 8px}
+    .hero p{margin:0 0 16px;color:var(--muted)}
+    .hero .actions{display:flex;gap:10px}
+    .btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--primary),#3EC2C9);color:#fff}
+    .btn-outline{background:transparent;border:2px solid var(--primary);color:var(--dark)}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:20px 0}
+    .card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(25,40,40,0.06)}
+    .flavor-img{height:120px;border-radius:10px;background:linear-gradient(180deg, rgba(255,127,179,0.12), rgba(103,200,214,0.06));
+      display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--dark)}
+    .flavor-title{font-weight:700;margin:8px 0}
+    .price{color:var(--primary);font-weight:800}
+
+    .about{display:flex;gap:14px;align-items:center;background:#fff;padding:16px;border-radius:12px;margin:18px 0}
+    .order{background:linear-gradient(180deg,#fff,#F8FFFF);padding:16px;border-radius:12px;margin:18px 0}
+    .field{display:flex;flex-direction:column;margin-bottom:10px}
+    label{font-size:13px;margin-bottom:6px;color:var(--dark)}
+    select,input[type="number"],input[type="text"]{padding:8px;border-radius:8px;border:1px solid #E6F0F0;background:#fff}
+
+    .whats-btn{display:inline-flex;gap:10px;align-items:center;padding:10px 12px;border-radius:10px;background:#25D366;color:white;font-weight:700;text-decoration:none}
+    footer{margin:30px 0;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+      .hero .title{font-size:24px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <a class="logo" href="#">
+        <svg viewBox="0 0 100 100"><defs>
+          <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#FF7FB3"/><stop offset="1" stop-color="#67C8D6"/></linearGradient></defs>
+          <circle cx="50" cy="50" r="44" fill="url(#g)"/>
+          <text x="50%" y="55%" font-size="28" fill="#fff" text-anchor="middle" font-weight="700">B</text>
+        </svg>
+        <div>
+          <div class="brand">Biebie’s Ice</div>
+          <div style="font-size:12px;color:var(--muted)">Homemade • Perintis Bukan Pewaris</div>
+        </div>
+      </a>
+
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
+        <a href="#about">About</a>
+        <a class="cta" href="#order">Order Now</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1 class="title">Es Krim Homemade, Lembut & Bikin Nagih 🍦</h1>
+        <p>Fresh setiap hari — dibuat oleh perintis muda. Pre-order dan titip warung tersedia.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#order">Order via WhatsApp</a>
+          <a class="btn btn-outline" href="#menu">Lihat Menu</a>
+        </div>
+      </div>
+
+      <div>
+        <div style="background:#fff;padding:18px;border-radius:14px;box-shadow:0 12px 30px rgba(103,200,214,0.12)">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:96px;height:96px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:36px">🍨</div>
+            <div>
+              <div style="font-weight:800">Special Market Day</div>
+              <div style="font-size:13px;color:var(--muted)">Limited Stock</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Menu & Harga</h2>
+      <div class="grid">
+        <div class="card"><div class="flavor-img">Vanilla</div><div class="flavor-title">Vanilla Classic</div><div class="price">Rp 4.000</div></div>
+        <div class="card"><div class="flavor-img">Chocolate</div><div class="flavor-title">Cokelat Nendang</div><div class="price">Rp 4.000</div></div>
+        <div class="card"><div class="flavor-img">Strawberry</div><div class="flavor-title">Strawberry SKM</div><div class="price">Rp 4.000</div></div>
+        <div class="card"><div class="flavor-img">Mango</div><div class="flavor-title">Mango Fresh</div><div class="price">Rp 4.500</div></div>
+        <div class="card"><div class="flavor-img">Milo</div><div class="flavor-title">Milo Crunch</div><div class="price">Rp 4.500</div></div>
+        <div class="card"><div class="flavor-img">Matcha</div><div class="flavor-title">Matcha Chocolatos</div><div class="price">Rp 5.000</div></div>
+      </div>
+    </section>
+
+    <section id="order">
+      <h2>Order / Pre-Order</h2>
+
+      <div class="order">
+        <div class="field">
+          <label>Pilih Rasa</label>
+          <select id="flavor">
+            <option value="Vanilla Classic - Rp4000">Vanilla Classic - Rp4000</option>
+            <option value="Cokelat Nendang - Rp4000">Cokelat Nendang - Rp4000</option>
+            <option value="Strawberry SKM - Rp4000">Strawberry SKM - Rp4000</option>
+            <option value="Mango Fresh - Rp4500">Mango Fresh - Rp4500</option>
+            <option value="Milo Crunch - Rp4500">Milo Crunch - Rp4500</option>
+            <option value="Matcha Chocolatos - Rp5000">Matcha Chocolatos - Rp5000</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Jumlah</label>
+          <input id="qty" type="number" min="1" value="1"/>
+        </div>
+
+        <div class="field">
+          <label>Nama / Catatan</label>
+          <input id="note" type="text" placeholder="contoh: Adi - ambil jam 12.00"/>
+        </div>
+
+        <button class="btn btn-primary" onclick="generateWA()">Kirim ke WhatsApp</button>
+
+        <a id="waLink" class="whats-btn" href="#" target="_blank" style="display:none">⌁ Buka WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Tentang Kami</h2>
+      <div class="about">
+        <div style="flex:1">
+          <strong>Perintis, bukan pewaris.</strong>
+          <p>Biebie’s Ice dibuat oleh perintis muda yang memulai semuanya dari nol. Resep diracik sendiri, diproduksi fresh setiap hari.</p>
+        </div>
+        <div>
+          WA: <strong>6282283918179</strong><br>
+          IG: @biebies.ice
+        </div>
+      </div>
+    </section>
+
+    <footer>© <span id="year"></span> Biebie’s Ice</footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const PHONE = "6282283918179";
+
+    function generateWA(){
+      let f = document.getElementById('flavor').value;
+      let q = document.getElementById('qty').value;
+      let n = document.getElementById('note').value;
+
+      let msg = `Halo Biebie’s Ice! Pesan:%0A- ${f}%0A- Jumlah: ${q}%0A- Catatan: ${n}`;
+      let url = `https://wa.me/${PHONE}?text=${msg}`;
+
+      document.getElementById('waLink').href = url;
+      document.getElementById('waLink').style.display = 'inline-block';
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>
